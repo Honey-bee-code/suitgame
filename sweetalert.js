@@ -26,7 +26,7 @@ Swal.mixin({
     },
   ])
   .then((result) => {
-    if (result.value == g) {
+    if (result.value.toString().toLowerCase() == g) {
       if (c == g) {
         Swal.fire({
           type: "info",
@@ -49,7 +49,7 @@ Swal.mixin({
           confirmButtonText: "Game Over",
         });
       }
-    } else if (result.value == s) {
+    } else if (result.value.toString().toLowerCase() == s) {
       if (c == s) {
         Swal.fire({
           type: "info",
@@ -72,7 +72,7 @@ Swal.mixin({
           confirmButtonText: "Game Over",
         });
       }
-    } else if (result.value == o) {
+    } else if (result.value.toString().toLowerCase() == o) {
       if (c == o) {
         Swal.fire({
           type: "info",
