@@ -15,8 +15,9 @@ if (c < 0.34) {
 
 Swal.mixin({
   input: "text",
-  confirmButtonText: "Next &rarr;",
+  confirmButtonText: "Oke, Lanjut",
   showCancelButton: true,
+  cancelButtonText: "Batalkan"
 })
   .queue([
     {
