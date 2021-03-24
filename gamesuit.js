@@ -19,25 +19,13 @@ while (lagi) {
   if (p == c) {
     h = "SERI!";
   } else if (p == g) {
-    if (c == o) {
-      h = win;
-    } else {
-      h = lose;
-    }
+    h = c == o ? win : lose;
   } else if (p == s) {
-    if (c == g) {
-      h = win;
-    } else {
-      h = lose;
-    }
+    h = c == g ? win : lose;
   } else if (p == o) {
-    if (c == s) {
-      h = win;
-    } else {
-      h = lose;
-    }
+    h = c == s ? win : lose;
   } else {
-    alert('Salah input, silahkan ketik salah satu di antara 3 pilihan:\ngajah\nsemut\norang')
+    alert("Salah input, silahkan ketik salah satu di antara 3 pilihan:\ngajah\nsemut\norang");
   }
 
   alert("Kamu memilih " + p + "\nComputer memilih " + c + "\nHasilnya : " + h);
