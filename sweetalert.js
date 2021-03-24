@@ -1,5 +1,8 @@
 var c = Math.random();
 var h = "";
+// var g = "gajah";
+// var s = "semut";
+// var o = "orang";
 var g = "gunting";
 var s = "batu";
 var o = "kertas";
