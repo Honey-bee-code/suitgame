@@ -12,6 +12,7 @@ if (c < 0.34) {
   c = o;
 }
 
+
 Swal.mixin({
   input: "text",
   confirmButtonText: "Next &rarr;",
@@ -30,21 +31,21 @@ Swal.mixin({
         Swal.fire({
           type: "info",
           title: "Kita SERI/IMBANG!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       } else if (c == o) {
         Swal.fire({
           type: "success",
           title: "Kamu MENANG!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       } else if (c == s) {
         Swal.fire({
           type: "error",
           title: "Kamu KALAH!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       }
@@ -53,21 +54,21 @@ Swal.mixin({
         Swal.fire({
           type: "info",
           title: "Kita SERI/IMBANG!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       } else if (c == g) {
         Swal.fire({
           type: "success",
           title: "Kamu MENANG!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       } else if (c == o) {
         Swal.fire({
           type: "error",
           title: "Kamu KALAH!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       }
@@ -76,21 +77,21 @@ Swal.mixin({
         Swal.fire({
           type: "info",
           title: "Kita SEIMBANG!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       } else if (c == s) {
         Swal.fire({
           type: "success",
           title: "Kamu MENANG!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       } else if (c == g) {
         Swal.fire({
           type: "error",
           title: "Kamu KALAH!",
-          html: "Kamu memilih: <pre><code><b>" + result.value + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
+          html: "Kamu memilih: <pre><code><b>" + result.value.toString().toUpperCase() + "</b></code></pre><br>Saya (com) memilih: <pre><code><b>" + c.toUpperCase() + "</b></code></pre>",
           confirmButtonText: "Game Over",
         });
       }
