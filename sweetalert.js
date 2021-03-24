@@ -22,7 +22,7 @@ Swal.mixin({
     {
       type: "question",
       title: "Silahkan Input !",
-      html: "Kamu bisa memilih inputan : <br>- semut  - gajah  - orang",
+      html: "Kamu bisa memilih inputan : <br>- Semut  - Gajah  - Orang",
     },
   ])
   .then((result) => {
