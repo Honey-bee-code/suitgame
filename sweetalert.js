@@ -1,8 +1,8 @@
 var c = Math.random();
 var h = "";
-var g = "gajah";
-var s = "semut";
-var o = "orang";
+var g = "gunting";
+var s = "batu";
+var o = "kertas";
 
 if (c < 0.34) {
   c = g;
@@ -23,7 +23,7 @@ Swal.mixin({
     {
       type: "question",
       title: "Silahkan Input !",
-      html: "Kamu bisa memilih inputan : <br>- Semut  - Gajah  - Orang",
+      html: "Kamu bisa memilih inputan : <br>- Gunting  - Batu  - Kertas",
     },
   ])
   .then((result) => {
