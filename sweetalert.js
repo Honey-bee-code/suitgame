@@ -15,18 +15,18 @@ if (c < 0.34) {
   c = o;
 }
 
-
 Swal.mixin({
   input: "text",
   confirmButtonText: "Oke, Lanjut",
   showCancelButton: true,
-  cancelButtonText: "Batalkan"
+  cancelButtonText: "Batalkan",
 })
   .queue([
     {
       type: "question",
       title: "Silahkan Input !",
       html: "Kamu bisa memilih inputan : <br>- Gunting  - Batu  - Kertas",
+      //   html: "Kamu bisa memilih inputan : <br>- Gajah  - Semut  - Orang",
     },
   ])
   .then((result) => {
