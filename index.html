@@ -9,15 +9,60 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/" /> -->
   </head>
-  <body style="background-image: url(img/suit.jpg); background-size: cover">
-    <div class="container d-flex justify-content-center" style="margin-top: 20rem">
-      <div class="row">
-        <div class="co-md-5">
-          <button type="button" class="btn btn-primary btn-lg" onclick="window.location.reload()">Klik tombol ini!</button>
+  <body>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img src="img/suit1.jpg" alt="" style="width: 100%; height: 640px" />
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" onclick="window.location.reload()">Klik tombol ini!</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item active">
+          <img src="img/suit2.jpg" alt="" style="width: 100%; height: 640px" />
+          <div class="container">
+            <div class="carousel-caption">
+              
+              <p><a class="btn btn-lg btn-primary" href="#" onclick="window.location.reload()">Klik tombol ini!</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/suit3.jpeg" alt="" style="width: 100%; height: 640px" />
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              
+              <p><a class="btn btn-lg btn-primary" href="#" onclick="window.location.reload()">Klik tombol ini!</a></p>
+            </div>
+          </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
+   
     <footer class="footer mt-auto py-3" style="margin-top: auto">
       <div class="container d-flex justify-content-center">
         <span>Create with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="http://honeybeepos.byethost33.com/honeybeecode/" style="text-decoration: none">Honeybeecode</a></span>
